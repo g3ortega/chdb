@@ -2,6 +2,10 @@
 
 Chdb is a Ruby gem that provides a direct interface to the [chDB](https://clickhouse.com/docs/en/chdb), an in-process SQL OLAP Engine powered by ClickHouse. It allows you to execute SQL queries and manage database sessions directly from your Ruby applications.
 
+## Status
+
+This gem is under development and the API is not stable yet.
+
 ## Installation
 
 First of all, you need to install the chDB engine.
