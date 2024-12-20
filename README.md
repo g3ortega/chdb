@@ -42,6 +42,13 @@ If you are not using bundler, you can install the gem by running:
    gem install chdb -- --with-opt-dir=/usr/local/lib
    ```
 
+In case you are using Docker, you can use the Dockerfile in this repository to build a container with the gem installed.
+
+```bash
+docker build -t chdbrubyplayground .
+docker run -it chdbrubyplayground
+```
+
 Make sure you have the `chdb` C library installed on your system.
 
 ## Usage
