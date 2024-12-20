@@ -23,5 +23,7 @@ jobs:
       with:
         ruby-version: ${{ matrix.ruby }}
         bundler-cache: true
+    - name: Install chdb library
+      run: curl -sL https://lib.chdb.io | bash
     - name: Run the default task
       run: bundle exec rake
