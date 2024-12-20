@@ -25,5 +25,13 @@ jobs:
         bundler-cache: true
     - name: Install chdb library
       run: curl -sL https://lib.chdb.io | bash
-    - name: Run the default task
-      run: bundle exec rake
+    - name: Copy chdb lib to root path
+      run: cp /usr/local/lib/libchdb.so .
+    - name: Compile native extension
+      run: |
+        bundle exec rake compile
+        bundle exec rake build
+    - name: Run tests
+      run: |
+        export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
+        bundle exec rake spec

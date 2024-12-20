@@ -107,7 +107,7 @@ static VALUE local_result_elapsed(VALUE self) {
     return DBL2NUM(result->c_result->elapsed);
 }
 
-void Init_chdb() {
+void Init_chdb(void) {
     DEBUG_PRINT("Initializing chdb extension");
 
     VALUE mChdb = rb_define_module("Chdb");
