@@ -32,9 +32,15 @@ bundle install
 
 If you are not using bundler, you can install the gem by running:
 
-```bash
-gem install chdb
-```
+1. Default installation (if chdb is in standard system paths):
+   ```bash
+   gem install chdb
+   ```
+
+2. Custom installation (specify chdb location):
+   ```bash
+   gem install chdb -- --with-opt-dir=/usr/local/lib
+   ```
 
 Make sure you have the `chdb` C library installed on your system.
 
