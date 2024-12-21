@@ -17,6 +17,8 @@ GEM
     racc (1.8.1)
     rainbow (3.1.1)
     rake (13.2.1)
+    rake-compiler (1.2.8)
+      rake
     regexp_parser (2.9.3)
     rspec (3.13.0)
       rspec-core (~> 3.13.0)
@@ -55,6 +57,7 @@ PLATFORMS
 DEPENDENCIES
   chdb!
   rake (~> 13.0)
+  rake-compiler (~> 1.2.8)
   rspec (~> 3.0)
   rubocop (~> 1.21)
 
